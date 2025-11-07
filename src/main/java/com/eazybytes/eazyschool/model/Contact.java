@@ -1,6 +1,8 @@
 package com.eazybytes.eazyschool.model;
 
 import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 import org.hibernate.annotations.GenericGenerator;
 
 import jakarta.persistence.*;
@@ -14,7 +16,8 @@ import jakarta.validation.constraints.Size;
 equals(), hashCode(), toString() methods & Constructor at compile time.
 This makes our code short and clean.
 * */
-@Data
+@Getter
+@Setter
 @Entity
 @Table(name="contact_msg")
 public class Contact extends BaseEntity{

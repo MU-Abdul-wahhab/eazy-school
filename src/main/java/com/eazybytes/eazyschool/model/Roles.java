@@ -1,11 +1,11 @@
 package com.eazybytes.eazyschool.model;
 
-import lombok.Data;
-import org.hibernate.annotations.GenericGenerator;
-
+import lombok.Getter;
+import lombok.Setter;
 import jakarta.persistence.*;
 
-@Data
+@Getter
+@Setter
 @Entity
 public class Roles extends BaseEntity {
 

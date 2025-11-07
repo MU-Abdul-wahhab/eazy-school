@@ -3,8 +3,11 @@ package com.eazybytes.eazyschool.model;
 import lombok.Data;
 
 import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.Setter;
 
-@Data
+@Getter
+@Setter
 @Entity
 @Table(name="holidays")
 public class Holiday extends BaseEntity {
